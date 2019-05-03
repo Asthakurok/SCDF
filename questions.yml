@@ -9,38 +9,18 @@ questions:
   show_subquestion_if: false
   group: "Container Images"
   subquestions:
-  - variable: image.repository
-    default: "grafana/grafana"
-    description: "Grafana image name"
-    type: string
-    label: Grafana Image Name
-  - variable: image.tag
-    default: "5.0.0"
-    description: "Grafana image tag"
-    type: string
-    label: Grafana Image Tag
-  - variable: grafanaWatcher.image.repository
-    default: "appropriate/curl"
-    description: "Grafana Watcher image name"
-    type: string
-    label: Grafana Watcher Image Name
-  - variable: grafanaWatcher.image.tag
-    default: "latest"
-    description: "Grafana Watcher image tag"
-    type: string
-    label: Grafana Watcher Image Tag
-- variable: persistence.enabled
+  - variable: persistence.enabled
   default: "false"
-  description: "Enable persistent volume for Grafana"
+  description: "Enable persistent volume for SCDF"
   type: boolean
   required: true
-  label: Grafana Persistent Volume Enabled
+  label: SCDF Persistent Volume Enabled
   show_subquestion_if: true
-  group: "Grafana Settings"
+  group: "SCDF Settings"
   subquestions:
   - variable: persistence.size
     default: "8Gi"
-    description: "Grafana Persistent Volume Size"
+    description: "SCDF Persistent Volume Size"
     type: string
     label: Grafana Volume Size
     required: true
@@ -48,7 +28,7 @@ questions:
     default: ""
     description: "If undefined or set to null, using the default storageClass. Defaults to null."
     type: storageclass
-    label: Storage Class for Grafana
+    label: Storage Class for SCDF
 - variable: ingress.enabled
   default: "true"
   description: "Expose grafana using Layer 7 Load Balancer - ingress"
@@ -66,7 +46,7 @@ questions:
     label: Hostname
 - variable: service.type
   default: "NodePort"
-  description: "Grafana service type"
+  description: "SCDF service type"
   type: enum
   group: "Service and Load Balancing"
   options:
@@ -84,5 +64,5 @@ questions:
     min: 30000
     max: 32767
     show_if: "ingress.enabled=false"
-    label: Grafana NodePort Number
+    label: SCDF NodePort Number
 
