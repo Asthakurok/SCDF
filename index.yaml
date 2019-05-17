@@ -1,0 +1,32 @@
+apiVersion: v1
+entries:
+  submariner:
+  - appVersion: v0.0.1
+    created: 2019-05-17T15:30:18.52041728+05:30
+    description: Submariner
+    digest: b7d49e3b98a8c8a664d8b7ecd782d3f337225913c052b073b8fdd3e25396b24e
+    home: https://submariner.io/
+    maintainers:
+    - email: charts@rancher.com
+      name: Rancher Labs
+    name: submariner
+    sources:
+    - https://github.com/rancher/submariner-charts
+    urls:
+    - https://github.com/Asthakurok/SCDF.git/submariner-0.0.1.tgz
+    version: 0.0.1
+  - appVersion: v0.0.1
+    created: 2019-05-17T15:30:18.520957402+05:30
+    description: Submariner
+    digest: b7d49e3b98a8c8a664d8b7ecd782d3f337225913c052b073b8fdd3e25396b24e
+    home: https://submariner.io/
+    maintainers:
+    - email: charts@rancher.com
+      name: Rancher Labs
+    name: submariner
+    sources:
+    - https://github.com/rancher/submariner-charts
+    urls:
+    - https://github.com/Asthakurok/SCDF.git/SCDF/submariner-0.0.1.tgz
+    version: 0.0.1
+generated: 2019-05-17T15:30:18.519769589+05:30
