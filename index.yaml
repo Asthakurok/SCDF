@@ -1,0 +1,165 @@
+apiVersion: v1
+entries:
+  grafana:
+  - apiVersion: v1
+    appVersion: 6.1.3
+    created: "2019-05-17T16:00:36.308467033+05:30"
+    description: The leading tool for querying and visualizing time series and metrics.
+    digest: 7d13a71a3986748dbf3c13f91b7af98825010bd5c9aa4bb741394384efe99f16
+    engine: gotpl
+    home: https://grafana.net
+    icon: https://raw.githubusercontent.com/grafana/grafana/master/public/img/logo_transparent_400x.png
+    kubeVersion: ^1.8.0-0
+    maintainers:
+    - email: zanhsieh@gmail.com
+      name: zanhsieh
+    - email: rluckie@cisco.com
+      name: rtluckie
+    - email: maorfr@gmail.com
+      name: maorfr
+    name: grafana
+    sources:
+    - https://github.com/grafana/grafana
+    urls:
+    - https://github.com/Asthakurok/SCDF.git/charts/grafana-3.2.0.tgz
+    version: 3.2.0
+  kafka:
+  - apiVersion: v1
+    appVersion: 5.0.1
+    created: "2019-05-17T16:00:36.310747025+05:30"
+    description: Apache Kafka is publish-subscribe messaging rethought as a distributed
+      commit log.
+    digest: a58a10bc8e06f567624cc25e628cde0d2478b8ec7106acc95b9ef7bfd2132856
+    home: https://kafka.apache.org/
+    icon: https://kafka.apache.org/images/logo.png
+    keywords:
+    - kafka
+    - zookeeper
+    - kafka statefulset
+    maintainers:
+    - email: faraaz@rationalizeit.us
+      name: faraazkhan
+    - email: marc.villacorta@gmail.com
+      name: h0tbird
+    - email: ben@spothero.com
+      name: benjigoldberg
+    name: kafka
+    sources:
+    - https://github.com/kubernetes/charts/tree/master/incubator/zookeeper
+    - https://github.com/Yolean/kubernetes-kafka
+    - https://github.com/confluentinc/cp-docker-images
+    - https://github.com/apache/kafka
+    urls:
+    - https://github.com/Asthakurok/SCDF.git/charts/kafka-0.13.11.tgz
+    version: 0.13.11
+  mysql:
+  - created: "2019-05-17T16:00:36.311451097+05:30"
+    description: Fast, reliable, scalable, and easy to use open-source relational
+      database system.
+    digest: 314df04967024171e42c08fc54f7e7572b71466582251766ec52624d4ecee9a3
+    engine: gotpl
+    home: https://www.mysql.com/
+    icon: https://www.mysql.com/common/logos/logo-mysql-170x115.png
+    keywords:
+    - mysql
+    - database
+    - sql
+    maintainers:
+    - email: viglesias@google.com
+      name: Vic Iglesias
+    name: mysql
+    sources:
+    - https://github.com/kubernetes/charts
+    - https://github.com/docker-library/mysql
+    urls:
+    - https://github.com/Asthakurok/SCDF.git/charts/mysql-0.3.4.tgz
+    version: 0.3.4
+  nfs-client-provisioner:
+  - apiVersion: v1
+    appVersion: 3.1.0
+    created: "2019-05-17T16:00:36.312082737+05:30"
+    description: nfs-client is an automatic provisioner that used your *already configured*
+      NFS server, automatically creating Persistent Volumes.
+    digest: 7dc0b5d6251cea15020d920aa1994cf427abd2460242907f67945de546b29755
+    home: https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
+    keywords:
+    - nfs
+    - storage
+    maintainers:
+    - email: bart@verwilst.be
+      name: verwilst
+    name: nfs-client-provisioner
+    sources:
+    - https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
+    urls:
+    - https://github.com/Asthakurok/SCDF.git/charts/nfs-client-provisioner-1.2.5.tgz
+    version: 1.2.5
+  rabbitmq:
+  - appVersion: 3.7.2
+    created: "2019-05-17T16:00:36.312668703+05:30"
+    description: Open source message broker software that implements the Advanced
+      Message Queuing Protocol (AMQP)
+    digest: 5eaa13a3dc085f2ce930081d493398ea4bef2a156a0151853da93ab08e00322b
+    engine: gotpl
+    home: https://www.rabbitmq.com
+    icon: https://bitnami.com/assets/stacks/rabbitmq/img/rabbitmq-stack-220x234.png
+    keywords:
+    - rabbitmq
+    - message queue
+    - AMQP
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: rabbitmq
+    sources:
+    - https://github.com/bitnami/bitnami-docker-rabbitmq
+    urls:
+    - https://github.com/Asthakurok/SCDF.git/charts/rabbitmq-0.6.16.tgz
+    version: 0.6.16
+  redis:
+  - apiVersion: v1
+    appVersion: 4.0.14
+    created: "2019-05-17T16:00:36.314640552+05:30"
+    description: Open source, advanced key-value store. It is often referred to as
+      a data structure server since keys can contain strings, hashes, lists, sets
+      and sorted sets.
+    digest: 7429ae8b269c1eb6aef7dc294e779742209690499ec0d04f15a24a13e4bfc6fa
+    engine: gotpl
+    home: http://redis.io/
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: redis
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redis
+    urls:
+    - https://github.com/Asthakurok/SCDF.git/charts/redis-6.4.4.tgz
+    version: 6.4.4
+  spring-cloud-data-flow-skn:
+  - apiVersion: v1
+    appVersion: 2.0.0.RELEASE
+    created: "2019-05-17T16:00:36.307221289+05:30"
+    description: Toolkit for building data processing pipelines.
+    digest: c1a7be1db5ff12d7c8c193ab48e1464a18b58c81b44d2a00bb5b16eb8d7dbd5d
+    home: http://cloud.spring.io/spring-cloud-dataflow/
+    icon: https://raw.githubusercontent.com/spring-cloud/spring-cloud-dataflow/master/spring-cloud-dataflow-docs/src/main/docbook/images/logo.png
+    maintainers:
+    - email: trisberg@pivotal.io
+      name: trisberg
+    - email: cschaefer@pivotal.io
+      name: chrisjs
+    name: spring-cloud-data-flow-skn
+    sources:
+    - https://github.com/spring-cloud/spring-cloud-dataflow
+    - https://github.com/spring-cloud/spring-cloud-skipper
+    urls:
+    - https://github.com/Asthakurok/SCDF.git/spring-cloud-data-flow-skn-1.0.1.tgz
+    version: 1.0.1
+generated: "2019-05-17T16:00:36.292865259+05:30"
